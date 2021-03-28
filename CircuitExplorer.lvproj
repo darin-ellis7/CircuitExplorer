@@ -10,15 +10,23 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="PowerSupply" Type="Folder">
-			<Item Name="Typedefs" Type="Folder">
-				<Item Name="PowerSupplyChannelSelection.ctl" Type="VI" URL="../PowerSupply/PowerSupplyChannelSelection.ctl"/>
+		<Item Name="AnalogDiscoveryFunction" Type="Folder">
+			<Item Name="FunctionGenerator" Type="Folder">
+				<Item Name="FunctionGenerator.lvclass" Type="LVClass" URL="../FunctionGenerator/FunctionGenerator.lvclass"/>
+				<Item Name="OutputWaveform.lvclass" Type="LVClass" URL="../OutputWaveform/OutputWaveform.lvclass"/>
 			</Item>
-			<Item Name="PowerSupply.lvclass" Type="LVClass" URL="../PowerSupply/PowerSupply.lvclass"/>
+			<Item Name="Oscilloscope" Type="Folder">
+				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Oscilloscope/Oscilloscope.lvclass"/>
+			</Item>
+			<Item Name="PowerSupply" Type="Folder">
+				<Item Name="Typedefs" Type="Folder">
+					<Item Name="PowerSupplyChannelSelection.ctl" Type="VI" URL="../PowerSupply/PowerSupplyChannelSelection.ctl"/>
+				</Item>
+				<Item Name="PowerSupply.lvclass" Type="LVClass" URL="../PowerSupply/PowerSupply.lvclass"/>
+			</Item>
+			<Item Name="AnalogDiscoveryFunction.lvclass" Type="LVClass" URL="../AnalogDiscoveryFunction/AnalogDiscoveryFunction.lvclass"/>
 		</Item>
 		<Item Name="CircuitExplorerMain.vi" Type="VI" URL="../CircuitExplorerMain.vi"/>
-		<Item Name="FunctionGenerator.lvclass" Type="LVClass" URL="../FunctionGenerator/FunctionGenerator.lvclass"/>
-		<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Oscilloscope/Oscilloscope.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DigilentWF.lvlib" Type="Library" URL="/&lt;vilib&gt;/DigilentWF/DigilentWF.lvlib"/>
