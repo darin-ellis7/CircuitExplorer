@@ -11,9 +11,12 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="AnalogDiscoveryFunction" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="FunctionGenerator" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="FunctionGenerator.lvclass" Type="LVClass" URL="../FunctionGenerator/FunctionGenerator.lvclass"/>
 				<Item Name="OutputWaveform.lvclass" Type="LVClass" URL="../OutputWaveform/OutputWaveform.lvclass"/>
+				<Item Name="FunctionGeneratorMain.vi" Type="VI" URL="../FunctionGenerator/FunctionGeneratorMain.vi"/>
 			</Item>
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Oscilloscope/Oscilloscope.lvclass"/>
@@ -23,11 +26,14 @@
 					<Item Name="PowerSupplyChannelSelection.ctl" Type="VI" URL="../PowerSupply/PowerSupplyChannelSelection.ctl"/>
 				</Item>
 				<Item Name="PowerSupply.lvclass" Type="LVClass" URL="../PowerSupply/PowerSupply.lvclass"/>
+				<Item Name="PowerSupplyMain.vi" Type="VI" URL="../PowerSupplyMain.vi"/>
 			</Item>
 			<Item Name="AnalogDiscoveryFunction.lvclass" Type="LVClass" URL="../AnalogDiscoveryFunction/AnalogDiscoveryFunction.lvclass"/>
 		</Item>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="PowerSupplyOscilloscopeBasicReader.vi" Type="VI" URL="../PowerSupplyOscilloscopeBasicReader.vi"/>
+		</Item>
 		<Item Name="CircuitExplorerMain.vi" Type="VI" URL="../CircuitExplorerMain.vi"/>
-		<Item Name="PowerSupplyOscilloscopeBasicReader.vi" Type="VI" URL="../PowerSupplyOscilloscopeBasicReader.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Binary to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Binary to Digital.vi"/>
@@ -43,9 +49,13 @@
 				<Item Name="DWDT Binary U32 to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Binary U32 to Digital.vi"/>
 				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 			</Item>
+			<Item Name="AutoRun.vi" Type="VI" URL="../Oscilloscope/AutoRun.vi"/>
+			<Item Name="ConfigureAnalogChannel.vi" Type="VI" URL="../Oscilloscope/ConfigureAnalogChannel.vi"/>
 			<Item Name="dwf.dll" Type="Document" URL="dwf.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="GetAnalogWaveform.vi" Type="VI" URL="../Oscilloscope/GetAnalogWaveform.vi"/>
+			<Item Name="ReadAnalogChannel.vi" Type="VI" URL="../Oscilloscope/ReadAnalogChannel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
