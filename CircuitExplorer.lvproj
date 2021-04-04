@@ -49,13 +49,9 @@
 				<Item Name="DWDT Binary U32 to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Binary U32 to Digital.vi"/>
 				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 			</Item>
-			<Item Name="AutoRun.vi" Type="VI" URL="../Oscilloscope/AutoRun.vi"/>
-			<Item Name="ConfigureAnalogChannel.vi" Type="VI" URL="../Oscilloscope/ConfigureAnalogChannel.vi"/>
 			<Item Name="dwf.dll" Type="Document" URL="dwf.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="GetAnalogWaveform.vi" Type="VI" URL="../Oscilloscope/GetAnalogWaveform.vi"/>
-			<Item Name="ReadAnalogChannel.vi" Type="VI" URL="../Oscilloscope/ReadAnalogChannel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
