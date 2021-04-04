@@ -20,6 +20,7 @@
 			</Item>
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Oscilloscope/Oscilloscope.lvclass"/>
+				<Item Name="SimpleOscilloscopeMain.vi" Type="VI" URL="../Oscilloscope/SimpleOscilloscopeMain.vi"/>
 			</Item>
 			<Item Name="PowerSupply" Type="Folder">
 				<Item Name="Typedefs" Type="Folder">
